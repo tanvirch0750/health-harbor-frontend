@@ -1,9 +1,13 @@
-function layout({children}: {children: React.ReactNode}) {
-    return (
-        <div>
-            This is layout pge
-        </div>
-    )
+import DoctorHeader from '@/components/view/headers/DoctorHeader';
+import DoctorSidebar from '@/components/view/sidebars/DoctorSidebar';
+
+function Layout({ children }: { children: React.ReactNode }) {
+  return (
+    <div>
+      <DoctorHeader />
+      <DoctorSidebar>{children}</DoctorSidebar>
+    </div>
+  );
 }
 
-export default layout
+export default Layout;

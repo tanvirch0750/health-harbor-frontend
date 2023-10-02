@@ -1,9 +1,12 @@
-function Layout({children}: {children: React.ReactNode}) {
-    return (
-        <div>
-            <h1>this is layout</h1>
-        </div>
-    )
+import PublicHeader from '@/components/view/headers/PublicHeader';
+
+function Layout({ children }: { children: React.ReactNode }) {
+  return (
+    <div>
+      <PublicHeader />
+      {children}
+    </div>
+  );
 }
 
-export default Layout
+export default Layout;
