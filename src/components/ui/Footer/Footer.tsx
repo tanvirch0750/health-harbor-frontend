@@ -6,8 +6,8 @@ const { Footer } = Layout;
 const FooterComponent = () => {
   return (
     <Footer style={{ textAlign: 'center' }}>
-      Doctors Portal &copy; {new Date().getFullYear()} Created by Programming
-      Hero
+      Health Harbor &copy; {new Date().getFullYear()} Created by Tanvir
+      Chowdhury
     </Footer>
   );
 };

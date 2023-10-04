@@ -17,8 +17,10 @@ export default function RootLayout({
   return (
     <Providers>
       <html lang="en">
-        <body>{children}</body>
-        <FooterComponent />
+        <body>
+          <main className=" min-h-screen">{children}</main>
+          <FooterComponent />
+        </body>
       </html>
     </Providers>
   );
